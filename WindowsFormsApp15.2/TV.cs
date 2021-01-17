@@ -8,28 +8,26 @@ namespace WindowsFormsApp15._2
 {
     class TV
     {
-
         private int _kanaal;
         private int _volume;
         private int Kanaal
         {
             get { return _kanaal; }
-            set { _kanaal = value; }
+            set => _kanaal = value;
         }
         private int Volume
         {
             get { return _volume; }
-            set { _volume = value; }
+            set => _volume = value;
         }
         public TV()
         {
-            _kanaal = 0;
-            _volume = 0;
+            this.Kanaal = 0;
+            this.Volume = 0;
         }
         public string ToonGegevens()
         {
-            string eenString = $"Kanaal: {_kanaal} - Volume: {_volume} ";
-            return eenString;
+            return $"Kanaal: {Kanaal} - Volume: {Volume} ";
         }
         public void VermeerderKanaal()
         {
